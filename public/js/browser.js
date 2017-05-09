@@ -18,6 +18,8 @@ $(".add-btn").on("click", function(event) {
 	let dataType = $(this).attr("data-type");
 	let selectedOption = $("#"+dataType+"-choices option:selected");
 	let selectedName = selectedOption.val();
+
+	if(days[currentDay-1][dataType].find(({ name }) => name === selectedName)) return null;
 	let lat = selectedOption.attr('data-lat')
 	let lng = selectedOption.attr('data-lng')
 	let marker = drawMarker(dataType, [lat, lng]);
