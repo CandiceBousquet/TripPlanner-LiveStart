@@ -140,3 +140,26 @@ h3 {
     vertical-align: middle; }
   #day-title > .remove {
     margin-left: 1em; }
+
+.error-msg{
+  color: red;
+  display: none
+}
+
+.place-info {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.firstHeading {
+  font-size: 1.2em
+}
+
+.place-info li {
+  padding-bottom: 6px;
+}
+
+.glyphicon-usd {
+  font-size: 0.9em;
+}
